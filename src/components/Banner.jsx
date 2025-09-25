@@ -39,7 +39,7 @@ const Banner = () => {
           animate="visible"
           transition={{ delay: 0.3 }}
         >
-          IGNITE 2024
+          IGNITE 2025
         </motion.h1>
 
         <motion.h3
