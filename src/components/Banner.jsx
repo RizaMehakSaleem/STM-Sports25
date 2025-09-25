@@ -1,5 +1,5 @@
 import React from 'react';
-import SOC from "../assets/images/maj.png";
+import SOC from "../assets/images/land.png";
 import LOGOM from "../assets/images/logomain.png";
 import { BsMouse } from "react-icons/bs";
 import { motion } from "framer-motion";
