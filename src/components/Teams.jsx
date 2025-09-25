@@ -26,7 +26,7 @@ const Teams = () => {
       {/* To try other fonts quickly, replace font-sport with one of:
           font-sportRusso | font-sportGraduate | font-sportBebas */}
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-8 justify-items-center">
         {/* Team 1 */}
         <motion.div
           initial={{ opacity: 0, y: 100 }} 
