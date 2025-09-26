@@ -27,12 +27,13 @@ const Footer = () => {
                 <p>&copy; {new Date().getFullYear()} Copyright STM. All Rights Reserved.</p>
                 <p>Designed By</p> 
                 <a
-                    href="https://www.vblazeatstm.tk/"
+                    href="https://www.vblazeatstm.tk/"  
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-bold underline text-blue-600 hover:text-blue-800"
+                    className="text-white font-bold underline hover:brightness-105 transition"
+
                 >
-                    Vblaze
+                    CODNOX
                 </a>
             </div>
         </footer>
