@@ -1,11 +1,11 @@
 import React from 'react';
-import FOOTWHITE from "../assets/images/footwhite.mp4"; // Import the video file
+import FOOTWHITE from "../assets/images/footwhite.mp4"; 
 import LOGOM from "../assets/images/logomain.png";
 import { BsMouse } from "react-icons/bs";
 import { motion } from "framer-motion";
 
 const Banner = () => {
-  // Animation variants
+  
   const fadeUpVariant = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0, transition: { duration: 1 } },
