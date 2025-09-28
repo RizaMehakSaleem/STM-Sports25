@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
-import BAN1 from "../assets/images/1.png"
-import BAN2 from "../assets/images/2.png"
-import BAN3 from "../assets/images/3.png"
+import BAN1 from "../assets/images/slider125.png"
+import BAN2 from "../assets/images/slider225.png"
+import BAN3 from "../assets/images/slider325.png"
 
 
 
