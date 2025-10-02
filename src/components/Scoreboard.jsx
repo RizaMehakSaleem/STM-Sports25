@@ -15,9 +15,9 @@ const Scoreboard = () => {
   ];
 
   return (
-    <div className="scoreboard-container h-screen bg-gray-900 py-20 px-6">
+    <div className="scoreboard-container h-screen bg-white py-20 px-6">
       {/* Scoreboard Heading */}
-      <h1 className="text-4xl font-bold mb-12 text-center text-cyan-700">SCORE BOARD</h1>
+      <h1 className="text-4xl font-bold mb-12 text-center text-black">SCORE BOARD</h1>
 
       {/* Grid Layout for Teams */}
       

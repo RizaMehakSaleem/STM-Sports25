@@ -54,7 +54,7 @@ function Slider() {
   }, [currentIndex]); // Re-run this effect whenever `currentIndex` changes
 
   return (
-    <div className="max-w-full h-auto w-full m-auto  pb-16  relative group bg-gray-900">
+    <div className="max-w-full h-auto w-full m-auto  pb-16  relative group bg-black">
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className="w-full h-[30vh] sm:h-[40vh]  md:h-[80vh] lg:h-[100vh] bg-no-repeat bg-center bg-cover overflow-hidden  transition-all transform duration-1000 ease-in-out"
