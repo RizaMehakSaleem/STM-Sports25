@@ -22,8 +22,8 @@ const Coordinators = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen bg-gray-900 px-8 py-12">
-      <h1 className="text-4xl font-bold mb-12 text-center text-cyan-700">
+    <div className="flex flex-col justify-center items-center min-h-screen bg-white px-8 py-12">
+      <h1 className="text-4xl font-bold mb-12 text-center text-black">
         OUR COORDINATORS
       </h1>
       <motion.div
@@ -35,7 +35,7 @@ const Coordinators = () => {
           {coordinators.map((coordinator, index) => (
             <div
               key={index}
-              className="bg-gray-900 w-80 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition duration-300 p-6 border border-none"
+              className="bg-black w-80 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition duration-300 p-6 border border-none"
             >
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
@@ -46,20 +46,20 @@ const Coordinators = () => {
                   <img
                     src={coordinator.image}
                     alt={coordinator.name}
-                    className="w-32 h-32 rounded-full mb-6 object-cover border-2 border-cyan-700"
+                    className="w-32 h-32 rounded-full mb-6 object-cover border-2 border-white"
                   />
                   <h2 className="text-2xl font-semibold text-white text-center mb-2">
                     {coordinator.name}
                   </h2>
-                  <p className="text-gray-300 text-center text-lg mb-2">
+                  <p className="text-white text-center text-lg mb-2">
                     {coordinator.title}
                   </p>
-                  <p className="text-gray-300 text-center text-lg mb-2">
+                  <p className="text-white text-center text-lg mb-2">
                     {coordinator.department}
                   </p>
                   <a
                     href={`tel:${coordinator.phone}`}
-                    className="text-cyan-700 font-semibold mt-4 text-center block text-lg hover:text-cyan-900"
+                    className="text-white font-semibold mt-4 text-center block text-lg hover:text-cyan-900"
                   >
                     {coordinator.phone}
                   </a>

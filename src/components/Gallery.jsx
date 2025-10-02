@@ -37,9 +37,9 @@ function Gallery() {
 
   return (
     
-    <main className="w-full h-auto bg-gray-900 py-16">
+    <main className="w-full h-auto bg-black py-16">
       <div className="text-center mb-20">
-        <h1 className="text-4xl font-bold text-cyan-700">GALLERY</h1>
+        <h1 className="text-4xl font-bold text-white">GALLERY</h1>
       </div>
 
       

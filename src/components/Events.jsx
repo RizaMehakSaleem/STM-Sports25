@@ -52,7 +52,7 @@ const events = {
     ],
   },
   gameSchedule: [
-   { id: 1, title: 'Badminton - Singles (Boys)', date: '2025-10-06', time: '10:45 AM - 03:00 PM', round: 'First Round & Quarterfinals' },
+    { id: 1, title: 'Badminton - Singles (Boys)', date: '2025-10-06', time: '10:45 AM - 03:00 PM', round: 'First Round & Quarterfinals' },
     { id: 2, title: 'Badminton - Doubles (Girls)', date: '2025-10-06', time: '10:45 AM - 03:00 PM', round: 'Quarterfinals' },
     { id: 3, title: 'Table Tennis - Singles (Girls)', date: '2025-10-06', time: '10:45 AM - 03:00 PM', round: 'First Round & Quarterfinals' },
     { id: 4, title: 'Table Tennis - Singles (Boys)', date: '2025-10-06', time: '10:45 AM - 03:00 PM', round: 'First Round & Quarterfinals' },
@@ -91,11 +91,10 @@ const events = {
     { id: 37, title: 'Cricket', date: '2025-10-10', time: '02:00 PM - 03:30 PM', round: 'Winners Team VS Staff Team' },
     { id: 38, title: 'Football - Final', date: '2025-10-10', time: '03:30 PM - 04:30 PM', round: 'Final & Losers Final' },
     { id: 39, title: 'Athletics Meet', date: '2025-10-11', time: '', round: '' },
-
   ],
 
   athleticSchedule: [
-   { id: 1, title: '5000 Meter', date: '2025-10-11', time: '8:50 AM', category: 'Men', round: 'Final' },
+    { id: 1, title: '5000 Meter', date: '2025-10-11', time: '8:50 AM', category: 'Men', round: 'Final' },
     { id: 2, title: '3000 Meter', date: '2025-10-11', time: '9:10 AM', category: 'Women', round: 'Final' },
     { id: 3, title: 'March Past & Inaugural Ceremony', date: '2025-10-11', time: '9:30 AM', category: 'All', round: '' },
     { id: 4, title: '100 Meter', date: '2025-10-11', time: '10:15 AM', category: 'Women', round: 'Heats' },
@@ -133,98 +132,98 @@ const EventTable = () => {
       const data = events[activeTab];
       return (
         <motion.div
-                  initial={{ opacity: 0, y: 100 }} 
-                  whileInView={{ opacity: 1, y: 0 }} 
-                  transition={{ duration: 1.25 }}
-                 >
-        <table className="min-w-full table-auto border-collapse mt-6 text-white">
-          <thead>
-            <tr className="bg-gray-800">
-              <th className="px-6 py-3 text-left text-sm font-medium text-gray-400">Men</th>
-              <th className="px-6 py-3 text-left text-sm font-medium text-gray-400">Women</th>
-            </tr>
-          </thead>
-          <tbody>
-            {data.men.map((event, index) => (
-              <tr key={index} className="border-b border-gray-700">
-                <td className="px-6 py-3 text-sm text-gray-300">{event}</td>
-                <td className="px-6 py-3 text-sm text-gray-300">{data.women[index] || ''}</td>
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.25 }}
+        >
+          <table className="min-w-full table-auto border-collapse mt-6 bg-white text-black">
+            <thead>
+              <tr className="bg-black">
+                <th className="px-6 py-3 text-left text-sm font-medium text-white">Men</th>
+                <th className="px-6 py-3 text-left text-sm font-medium text-white">Women</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {data.men.map((event, index) => (
+                <tr key={index} className="border-b border-gray-300">
+                  <td className="px-6 py-3 text-sm text-gray-700">{event}</td>
+                  <td className="px-6 py-3 text-sm text-gray-700">{data.women[index] || ''}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </motion.div>
       );
     } else if (activeTab === 'gameSchedule' || activeTab === 'athleticSchedule') {
       const data = events[activeTab];
       return (
         <motion.div
-                  initial={{ opacity: 0, y: 100 }} 
-                  whileInView={{ opacity: 1, y: 0 }} 
-                  transition={{ duration: 1.25 }}
-                 >
-        <div className="overflow-y-auto max-h-[450px]">
-          <table className="min-w-full table-auto border-collapse mt-6 text-white">
-            <thead>
-              <tr className="bg-gray-800">
-                <th className="px-6 py-3 text-left text-sm font-medium text-gray-400">Time</th>
-                <th className="px-6 py-3 text-left text-sm font-medium text-gray-400">Event</th>
-                <th className="px-6 py-3 text-left text-sm font-medium text-gray-400">Date</th>
-                <th className="px-6 py-3 text-left text-sm font-medium text-gray-400">Round</th>
-              </tr>
-            </thead>
-            <tbody>
-              {data.map(event => (
-                <tr key={event.id} className="border-b border-gray-700">
-                  <td className="px-6 py-3 text-sm text-gray-300">{event.time}</td>
-                  <td className="px-6 py-3 text-sm text-gray-300">{event.title}</td>
-                  <td className="px-6 py-3 text-sm text-gray-300">{event.date}</td>
-                  <td className="px-6 py-3 text-sm text-gray-300">{event.round}</td>
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.25 }}
+        >
+          <div className="overflow-y-auto max-h-[450px]">
+            <table className="min-w-full table-auto border-collapse mt-6 bg-white text-black">
+              <thead>
+                <tr className="bg-black">
+                  <th className="px-6 py-3 text-left text-sm font-medium text-white">Time</th>
+                  <th className="px-6 py-3 text-left text-sm font-medium text-white">Event</th>
+                  <th className="px-6 py-3 text-left text-sm font-medium text-white">Date</th>
+                  <th className="px-6 py-3 text-left text-sm font-medium text-white">Round</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+              </thead>
+              <tbody>
+                {data.map(event => (
+                  <tr key={event.id} className="border-b border-gray-300">
+                    <td className="px-6 py-3 text-sm text-gray-700">{event.time}</td>
+                    <td className="px-6 py-3 text-sm text-gray-700">{event.title}</td>
+                    <td className="px-6 py-3 text-sm text-gray-700">{event.date}</td>
+                    <td className="px-6 py-3 text-sm text-gray-700">{event.round}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </motion.div>
       );
     }
   };
 
   return (
-    <div className="p-8 bg-gray-900 min-h-screen">
+    <div className="p-8 bg-black min-h-screen">
       <motion.div
-                  initial={{ opacity: 0, y: 100 }} 
-                  whileInView={{ opacity: 1, y: 0 }} 
-                  transition={{ duration: 1.25 }}
-                 >
-      <h1 className="text-4xl font-bold mb-12 text-center text-cyan-700">EVENT SCHEDULE</h1>
-      <div className="flex flex-wrap justify-center gap-4 mb-6">
-        <button
-          className={`relative px-6 py-3 rounded-lg text-white ${activeTab === 'gameList' ? 'bg-cyan-900' : 'bg-gray-700'}`}
-          onClick={() => setActiveTab('gameList')}
-        >
-          Game List
-        </button>
-        <button
-          className={`relative px-6 py-3 rounded-lg text-white ${activeTab === 'athleticList' ? 'bg-cyan-900' : 'bg-gray-700'}`}
-          onClick={() => setActiveTab('athleticList')}
-        >
-          Athletic List
-        </button>
-        <button
-          className={`relative px-6 py-3 rounded-lg text-white ${activeTab === 'gameSchedule' ? 'bg-cyan-900' : 'bg-gray-700'}`}
-          onClick={() => setActiveTab('gameSchedule')}
-        >
-          Game Schedule
-        </button>
-        <button
-          className={`relative px-6 py-3 rounded-lg text-white ${activeTab === 'athleticSchedule' ? 'bg-cyan-900' : 'bg-gray-700'}`}
-          onClick={() => setActiveTab('athleticSchedule')}
-        >
-          Athletic Schedule
-        </button>
-      </div>
-      <div className="overflow-x-auto">{renderTable()}</div>
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.25 }}
+      >
+        <h1 className="text-4xl font-bold mb-12 text-center text-white">EVENT SCHEDULE</h1>
+        <div className="flex flex-wrap justify-center gap-4 mb-6">
+          <button
+            className={`relative px-6 py-3 rounded-lg text-black ${activeTab === 'gameList' ? 'bg-white' : 'bg-white'}`}
+            onClick={() => setActiveTab('gameList')}
+          >
+            Game List
+          </button>
+          <button
+            className={`relative px-6 py-3 rounded-lg text-black ${activeTab === 'athleticList' ? 'bg-white' : 'bg-white'}`}
+            onClick={() => setActiveTab('athleticList')}
+          >
+            Athletic List
+          </button>
+          <button
+            className={`relative px-6 py-3 rounded-lg text-black ${activeTab === 'gameSchedule' ? 'bg-white' : 'bg-white'}`}
+            onClick={() => setActiveTab('gameSchedule')}
+          >
+            Game Schedule
+          </button>
+          <button
+            className={`relative px-6 py-3 rounded-lg text-black ${activeTab === 'athleticSchedule' ? 'bg-white' : 'bg-white'}`}
+            onClick={() => setActiveTab('athleticSchedule')}
+          >
+            Athletic Schedule
+          </button>
+        </div>
+        <div className="overflow-x-auto">{renderTable()}</div>
       </motion.div>
     </div>
   );
