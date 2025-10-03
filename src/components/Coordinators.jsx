@@ -1,6 +1,7 @@
 import React from "react";
 import ADARSH from "../assets/images/adharshsir.jpeg";
 import VARUN from "../assets/images/varunsir.jpg";
+import Muralidharan from "../assets/images/Muralidharansir.jpeg";
 import { motion } from "framer-motion";
 
 const Coordinators = () => {
@@ -18,6 +19,13 @@ const Coordinators = () => {
       department: "Mechanical Department",
       phone: "+919495124062",
       image: VARUN,
+    },
+    {
+      name: "Muralidharan P T",
+      title: "Assistant Professor",
+      department: "Department of Physical Education",
+      phone: "+919447688876",
+      image: Muralidharan,
     },
   ];
 
