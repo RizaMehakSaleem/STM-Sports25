@@ -7,6 +7,13 @@ import { motion } from "framer-motion";
 const Coordinators = () => {
   const coordinators = [
     {
+      name: "Muralidharan P T",
+      title: "Assistant Professor",
+      department: "Department of Physical Education",
+      phone: "+919447688876",
+      image: Muralidharan,
+    },
+    {
       name: "ADARSH MADHU",
       title: "Assistant Professor",
       department: "Mechanical Department",
@@ -20,13 +27,7 @@ const Coordinators = () => {
       phone: "+919495124062",
       image: VARUN,
     },
-    {
-      name: "Muralidharan P T",
-      title: "Assistant Professor",
-      department: "Department of Physical Education",
-      phone: "+919447688876",
-      image: Muralidharan,
-    },
+    
   ];
 
   return (
