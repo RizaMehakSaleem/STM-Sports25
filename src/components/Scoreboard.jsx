@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
-import RETREOS from "../assets/images/retreos.jpg"
+import ADHERA from "../assets/images/Adhera.jpg"
+import KALHAAR from "../assets/images/Kalhaar.jpg"
 import ASSA from "../assets/images/Assa.jpg"
 import CRUS from "../assets/images/crus2.jpg"
-import CYB from "../assets/images/cyborgs.jpg"
 
 const Scoreboard = () => {
 
  
   const teams = [
-    { id: 1, name: "Name1", logo: RETREOS, score: 42 },
-    { id: 2, name: "Assassins", logo: ASSA, score: 78 },
-    { id: 3, name: "Crusaders", logo: CRUS, score: 56 },
-    { id: 4, name: "Cyborgs", logo: CYB, score: 64 },
+    { id: 1, name: "Adhera", logo: ADHERA, score: 42 },
+    { id: 2, name: "Kalhaar", logo: KALHAAR, score: 78 },
+    { id: 3, name: "Assassins", logo: ASSA, score: 56 },
+    { id: 4, name: "Crusaders", logo: CRUS, score: 64 },
   ];
 
   return (
