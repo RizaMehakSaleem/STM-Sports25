@@ -35,7 +35,7 @@ const Footer = () => {
 
 
                 >
-                    CODNOX
+                    VBLAZE AND CODNOX 
                 </a>
             </div>
         </footer>
